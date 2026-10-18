@@ -1,0 +1,8 @@
+version: 1
+ingress:
+  - name: app
+    service: web      # the compose service to expose
+    port: 80          # the port nginx listens on
+    primary: true
+    access:
+      type: public    # change to "cas" to require a university login
