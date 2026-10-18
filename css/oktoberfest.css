@@ -1,0 +1,296 @@
+/* ================================================
+   COFFEE BAR CHE — oktoberfest.css
+   Bavarian / Oktoberfest seasonal theme.
+   Implements docs/bavarian-design-system.json:
+     - two-colour palette: Bavarian blue #1FA2D8 + white
+     - header zone: checkered bunting hung from the top-left
+     - top corners: draped blue/white curtains
+     - footer zone: edge-to-edge diamond lozenge border
+   Loaded after style/components/responsive so it only
+   overrides; remove the <link> to return to the default look.
+   ================================================ */
+
+:root {
+  --okt-blue:       #1FA2D8;
+  --okt-blue-deep:  #1385B5;
+  --okt-white:      #FFFFFF;
+  --okt-tint:       #EAF6FC;
+  --okt-tint-2:     #D6EEF9;
+  --okt-line:       #1FA2D8;
+  --okt-line-soft:  #BFE4F4;
+  --okt-canvas:     #F3FAFD;
+
+  --okt-header:     104px;   /* decorative zone above the page card */
+  --okt-footer:     176px;   /* decorative zone below the page card */
+  --okt-band:       128px;   /* height of the diamond border */
+  --okt-gutter:     104px;   /* side gutters so the curtain panels never cover content */
+
+  /* Re-map the site palette onto the two-colour system */
+  --color-primary:  var(--okt-blue);
+  --color-accent:   var(--okt-blue-deep);
+  --color-bg:       var(--okt-white);
+  --color-light:    var(--okt-tint);
+  --color-border:   var(--okt-line-soft);
+  --grid-line:      rgba(31, 162, 216, 0.16);
+}
+
+/* ── Canvas: light ground + diamond lozenge footer border ── */
+body,
+body.edition-page {
+  position: relative;
+  display: flow-root; /* keep .edition's top margin from collapsing through body */
+  background-color: var(--okt-canvas);
+  background-image: url('../assets/oktoberfest/diamond-band.svg');
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  background-size: 40px var(--okt-band);
+}
+
+/* ── Curtains in the top corners ───────────────── */
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 280px;
+  height: 224px;
+  background: url('../assets/oktoberfest/curtain.svg') no-repeat top left / contain;
+  filter: drop-shadow(0 10px 14px rgba(19, 133, 181, 0.22));
+  pointer-events: none;
+  z-index: 45;
+}
+
+body::before { left: 0; }
+body::after  { right: 0; transform: scaleX(-1); }
+
+/* ── Page card ─────────────────────────────────── */
+.edition {
+  position: relative;
+  margin: var(--okt-header) var(--okt-gutter) var(--okt-footer) var(--okt-gutter);
+  background: var(--okt-white);
+  border-color: var(--okt-line);
+  box-shadow: 0 24px 60px rgba(31, 162, 216, 0.14);
+}
+
+/* Bunting garland hung from the top-left of the card */
+.edition::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: calc(-1 * var(--okt-header) + 2px);
+  width: min(900px, 78%);
+  height: 110px;
+  background: url('../assets/oktoberfest/bunting.svg') no-repeat left top / contain;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Rail: push the logo mark below the left curtain */
+.edition-rail {
+  padding-top: 256px;
+  border-right-color: var(--okt-line-soft);
+}
+
+/* ── Hairlines → Bavarian blue ─────────────────── */
+.edition__nav,
+.edition__nav-item,
+.edition__hero-copy,
+.edition__band,
+.edition__col,
+.edition__col--photo,
+.edition__foot,
+.edition__events-track,
+.edition__masthead,
+.edition__hero-map,
+.page-home .edition__hero-photo video + video {
+  border-color: var(--okt-line);
+}
+
+.edition__story,
+.edition__team-cta,
+.edition__founded,
+.edition__member,
+.edition__member-photo,
+.edition__contact-mini {
+  border-color: var(--okt-line-soft);
+}
+
+.edition__nav-item:hover {
+  background: rgba(31, 162, 216, 0.08);
+}
+
+/* ── Hero: circular logo replaces the wordmark image ── */
+.edition__title-img--logo {
+  width: clamp(120px, 14vw, 180px);
+  max-width: 180px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px var(--okt-white), 0 0 0 8px var(--okt-blue);
+}
+
+.page-home .edition__title-image {
+  margin-bottom: 20px;
+}
+
+/* ── Component accents that were hard-coded red ── */
+.edition__menu-card:nth-child(3n+2) {
+  background: var(--okt-tint-2);
+}
+
+.menu-fab:hover,
+.che-turntable__btn--play:hover,
+.che-contact-form__submit:hover {
+  background: var(--okt-blue-deep);
+}
+
+.cookie-banner__icon,
+.che-type-select__icon,
+.che-type-select__option i {
+  background: rgba(31, 162, 216, 0.14);
+}
+
+.che-type-select__option.is-active {
+  background: rgba(31, 162, 216, 0.1);
+}
+
+.che-form-section {
+  border-color: rgba(31, 162, 216, 0.16);
+}
+
+.form-select:focus,
+.che-type-select__trigger[aria-expanded="true"],
+.che-contact-form .che-contact-form__input:focus {
+  box-shadow: 0 0 0 3px rgba(31, 162, 216, 0.16);
+}
+
+.che-contact-dock__btn:focus-visible {
+  box-shadow: 0 6px 18px rgba(31, 162, 216, 0.3);
+}
+
+.che-gallery {
+  background: var(--okt-tint);
+}
+
+/* Events page: compact footer sits in the gap above the diamond border */
+.page-events-gallery .edition {
+  margin-bottom: 0;
+}
+
+.page-events-gallery .footer--compact {
+  background: transparent;
+  border-top: none;
+  padding: 0;
+  margin: 0 var(--okt-gutter) var(--okt-footer);
+}
+
+.page-events-gallery .footer--compact .footer__copy {
+  color: var(--color-muted);
+}
+
+/* ── Team page keeps its no-scroll layout ──────── */
+body.page-team .edition {
+  height: calc(100vh - var(--okt-header) - var(--okt-footer));
+}
+
+/* ── Non-edition pages (privacy): classic fixed navbar is the "rod" ── */
+body:not(.edition-page)::before,
+body:not(.edition-page)::after {
+  top: var(--nav-height);
+  z-index: 30;
+}
+
+/* ── Responsive ────────────────────────────────── */
+@media (max-width: 1100px) {
+  .edition__hero-copy,
+  .edition__col,
+  .edition__col--photo,
+  .page-home .edition__hero-photo video + video {
+    border-color: var(--okt-line);
+  }
+
+  .edition__team-grid .edition__member {
+    border-color: var(--okt-line-soft);
+  }
+}
+
+@media (max-width: 980px) {
+  :root {
+    --okt-header: 72px;
+    --okt-footer: 150px;
+    --okt-band: 96px;
+  }
+
+  body,
+  body.edition-page {
+    background-size: 30px var(--okt-band);
+  }
+
+  /* Curtains hang from the mobile navbar */
+  body::before,
+  body::after {
+    top: var(--nav-height);
+    width: 170px;
+    height: 136px;
+    z-index: 30;
+  }
+
+  .edition-rail {
+    padding-top: 22px;
+  }
+
+  .edition {
+    margin: calc(var(--nav-height) + var(--okt-header)) 0 var(--okt-footer);
+    box-shadow: none;
+  }
+
+  .edition::before {
+    left: 0;
+    top: calc(-1 * var(--okt-header) + 4px);
+    width: 100%;
+    height: 68px;
+  }
+
+  body.page-team .edition {
+    height: calc(100vh - var(--nav-height) - var(--okt-header) - var(--okt-footer));
+  }
+
+  .page-events-gallery .footer--compact {
+    margin: 0 16px var(--okt-footer);
+  }
+}
+
+@media (max-width: 640px) {
+  .edition__team-grid .edition__member {
+    border-color: var(--okt-line-soft) !important;
+  }
+
+  :root {
+    --okt-header: 64px;
+  }
+
+  body::before,
+  body::after {
+    width: 96px;
+    height: 77px;
+  }
+
+  .edition::before {
+    height: 56px;
+  }
+
+  .edition__title-img--logo {
+    width: 120px;
+  }
+}
+
+@media print {
+  body::before,
+  body::after,
+  .edition::before {
+    display: none;
+  }
+
+  body,
+  body.edition-page {
+    background-image: none;
+  }
+}

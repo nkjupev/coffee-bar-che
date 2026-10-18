@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Кафе Бар Че — место каде луѓето се среќаваат, уживаат и инспирираат. Спроти Универзална сала, Скопје." data-i18n="meta.home_desc" />
+  <title data-i18n="meta.home_title">Кафе Бар Че | Скопје</title>
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,600;1,700&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body class="edition-page page-home">
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Оди на содржина</a>
+
+  <header class="navbar" role="banner">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Кафе Бар Че">
+        <img src="assets/logo.png" width="44" height="44" alt="Лого на Кафе Бар Че" />
+        <div class="navbar__logo-text">Кафе Бар Че<span>Скопје</span></div>
+      </a>
+      <nav class="navbar__nav" aria-label="Главна навигација">
+        <a href="index.html" class="navbar__link active" data-i18n="nav.home">Дома</a>
+        <a href="about.html" class="navbar__link" data-i18n="nav.about">За Нас</a>
+        <a href="events.html" class="navbar__link" data-i18n="nav.events">НАСТАНИ</a>
+        <a href="team.html" class="navbar__link" data-i18n="nav.team">Тим</a>
+        <a href="contact.html" class="navbar__link" data-i18n="nav.contact">Контакт</a>
+      </nav>
+      <div class="navbar__actions">
+        <div class="lang-toggle" role="group" aria-label="Избор на јазик">
+          <button class="lang-btn active" data-lang="mk" aria-pressed="true">MK</button>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="navbar__hamburger" aria-label="Отвори мени" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="navbar__mobile" aria-label="Мобилна навигација">
+      <a href="index.html" class="navbar__link active" data-i18n="nav.home">Дома</a>
+      <a href="events.html" class="navbar__link" data-i18n="nav.events">НАСТАНИ</a>
+      <a href="team.html" class="navbar__link" data-i18n="nav.team">Тим</a>
+      <a href="contact.html" class="navbar__link" data-i18n="nav.contact">Контакт</a>
+    </nav>
+  </header>
+
+  <aside class="edition-rail" aria-label="Социјални мрежи">
+    <img class="edition-rail__mark" src="assets/logo.png" alt="" width="28" height="28" />
+    <p class="edition-rail__brand">Кафе Бар Че</p>
+    <div class="edition-rail__social">
+      <a href="https://www.instagram.com/kadeeche/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/CafeBarChe/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://open.spotify.com/playlist/1FwgrxGksSCPBpdul6Po6f" target="_blank" rel="noopener noreferrer" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+    </div>
+  </aside>
+
+  <main id="main" class="edition">
+    <nav class="edition__nav" aria-label="Главна навигација" data-menu-scroll-anchor>
+      <a class="edition__nav-item" href="index.html" data-i18n="nav.home">Дома</a>
+      <a class="edition__nav-item" href="events.html" data-i18n="nav.events">Настани</a>
+      <a class="edition__nav-item" href="team.html" data-i18n="nav.team">Тим</a>
+      <a class="edition__nav-item" href="contact.html" data-i18n="nav.contact">Контакт</a>
+      <div class="edition__nav-item edition__nav-item--lang">
+        <div class="lang-toggle" role="group" aria-label="Избор на јазик">
+          <button class="lang-btn active" data-lang="mk" aria-pressed="true">MK</button>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="edition__hero">
+      <div class="edition__hero-copy">
+        <p class="edition__kicker" data-i18n="hero.overline">Добредојдовте во</p>
+        <h1 class="edition__title edition__title-image">
+          <img class="edition__title-img edition__title-img--mk edition__title-img--logo" src="assets/logo.png" alt="Кафе Бар Че" width="512" height="512" />
+          <img class="edition__title-img edition__title-img--en edition__title-img--logo" src="assets/logo.png" alt="Coffee Bar Che" width="512" height="512" />
+        </h1>
+        <h2 class="edition__hero-subtitle" data-i18n="home.hero_subtitle_title">Твојот соседски бар</h2>
+        <p class="edition__hero-tag" data-i18n="home.hero_tagline">Место каде што секогаш има причина да се вратиш.</p>
+      </div>
+      <figure class="edition__hero-photo">
+        <video src="assets/videos/che-hero.mp4" poster="assets/home/che-interior.png" autoplay muted loop playsinline>
+          Вашиот прелистувач не поддржува видео.
+        </video>
+        <video src="assets/videos/che-hero1.mp4" poster="assets/home/che-interior.png" autoplay muted loop playsinline data-playback-rate="0.5">
+          Вашиот прелистувач не поддржува видео.
+        </video>
+      </figure>
+    </section>
+
+    <section class="edition__band edition__band--split">
+      <div class="edition__col edition__col--flip">
+        <div class="edition__flip" tabindex="0">
+          <div class="edition__flip-inner">
+            <div class="edition__flip-face edition__flip-face--front">
+              <h2 class="edition__flavour-title">
+                <span data-i18n="home.about_flip_title">За Нас</span>
+              </h2>
+            </div>
+            <div class="edition__flip-face edition__flip-face--back">
+              <p class="edition__kicker" data-i18n="home.about_story_title">Нашата приказна</p>
+              <p data-i18n="home.about_flip_text">Сместен во срцето на Скопје, Кафе Бар Че е многу повеќе од место за кафе или пијалак — тоа е простор изграден околу карактер, креативност и поврзаност.</p>
+              <button type="button" class="btn btn-outline btn-sm edition__flip-more" data-story-open aria-haspopup="dialog">
+                <span data-i18n="home.about_read_more">Прочитај повеќе</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edition__col edition__col--beers">
+        <h2 class="edition__flavour-title">
+          <span data-i18n="home.beers_title">Изборот на пивца во ЧЕ!</span>
+        </h2>
+        <div class="edition__beers" data-beers aria-roledescription="carousel" aria-label="Изборот на пивца во ЧЕ!" data-i18n-aria="home.beers_title">
+          <ul class="edition__beers-slide is-active">
+            <li class="edition__beer">
+              <svg class="edition__locale-ring" viewBox="0 0 200 200" aria-hidden="true">
+                <path id="beer-ring-skopsko" d="M30,100 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" fill="none" />
+                <text><textPath href="#beer-ring-skopsko" textLength="428" lengthAdjust="spacing"><tspan class="edition__locale-name">Skopsko</tspan> • <tspan class="edition__locale-name">Skopsko</tspan> • <tspan class="edition__locale-name">Skopsko</tspan> • <tspan class="edition__locale-name">Skopsko</tspan> •</textPath></text>
+              </svg>
+              <img class="edition__locale-logo" src="assets/beers/skopsko_beer.jpg" alt="Skopsko" width="112" height="112" loading="lazy" />
+            </li>
+            <li class="edition__beer">
+              <svg class="edition__locale-ring" viewBox="0 0 200 200" aria-hidden="true">
+                <path id="beer-ring-niksicko" d="M30,100 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" fill="none" />
+                <text><textPath href="#beer-ring-niksicko" textLength="428" lengthAdjust="spacing"><tspan class="edition__locale-name">Nikšićko</tspan> • <tspan class="edition__locale-name">Nikšićko</tspan> • <tspan class="edition__locale-name">Nikšićko</tspan> • <tspan class="edition__locale-name">Nikšićko</tspan> •</textPath></text>
+              </svg>
+              <img class="edition__locale-logo" src="assets/beers/niksicko_beer.jpg" alt="Nikšićko" width="112" height="112" loading="lazy" />
+            </li>
+            <li class="edition__beer">
+              <svg class="edition__locale-ring" viewBox="0 0 200 200" aria-hidden="true">
+                <path id="beer-ring-paulaner" d="M30,100 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" fill="none" />
+                <text><textPath href="#beer-ring-paulaner" textLength="428" lengthAdjust="spacing"><tspan class="edition__locale-name">Paulaner</tspan> • <tspan class="edition__locale-name">Paulaner</tspan> • <tspan class="edition__locale-name">Paulaner</tspan> • <tspan class="edition__locale-name">Paulaner</tspan> •</textPath></text>
+              </svg>
+              <img class="edition__locale-logo" src="assets/beers/paulaner_beer.jpg" alt="Paulaner" width="112" height="112" loading="lazy" />
+            </li>
+            <li class="edition__beer">
+              <svg class="edition__locale-ring" viewBox="0 0 200 200" aria-hidden="true">
+                <path id="beer-ring-heineken" d="M30,100 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" fill="none" />
+                <text><textPath href="#beer-ring-heineken" textLength="428" lengthAdjust="spacing"><tspan class="edition__locale-name">Heineken</tspan> • <tspan class="edition__locale-name">Heineken</tspan> • <tspan class="edition__locale-name">Heineken</tspan> • <tspan class="edition__locale-name">Heineken</tspan> •</textPath></text>
+              </svg>
+              <img class="edition__locale-logo" src="assets/beers/heineken_beer.jpg" alt="Heineken" width="112" height="112" loading="lazy" />
+            </li>
+            <li class="edition__beer">
+              <svg class="edition__locale-ring" viewBox="0 0 200 200" aria-hidden="true">
+                <path id="beer-ring-corona" d="M30,100 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" fill="none" />
+                <text><textPath href="#beer-ring-corona" textLength="428" lengthAdjust="spacing"><tspan class="edition__locale-name">Corona</tspan> • <tspan class="edition__locale-name">Corona</tspan> • <tspan class="edition__locale-name">Corona</tspan> • <tspan class="edition__locale-name">Corona</tspan> • <tspan class="edition__locale-name">Corona</tspan> •</textPath></text>
+              </svg>
+              <img class="edition__locale-logo" src="assets/beers/corona_beer.jpg" alt="Corona" width="112" height="112" loading="lazy" />
+            </li>
+          </ul>
+          <ul class="edition__beers-slide">
+            <li class="edition__beer">
+              <svg class="edition__locale-ring" viewBox="0 0 200 200" aria-hidden="true">
+                <path id="beer-ring-asahi" d="M30,100 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" fill="none" />
+                <text><textPath href="#beer-ring-asahi" textLength="428" lengthAdjust="spacing"><tspan class="edition__locale-name">Asahi</tspan> • <tspan class="edition__locale-name">Asahi</tspan> • <tspan class="edition__locale-name">Asahi</tspan> • <tspan class="edition__locale-name">Asahi</tspan> • <tspan class="edition__locale-name">Asahi</tspan> • <tspan class="edition__locale-name">Asahi</tspan> •</textPath></text>
+              </svg>
+              <img class="edition__locale-logo" src="assets/beers/asahi_beer.jpg" alt="Asahi" width="112" height="112" loading="lazy" />
+            </li>
+            <li class="edition__beer">
+              <svg class="edition__locale-ring" viewBox="0 0 200 200" aria-hidden="true">
+                <path id="beer-ring-birra_morretti" d="M30,100 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" fill="none" />
+                <text><textPath href="#beer-ring-birra_morretti" textLength="428" lengthAdjust="spacing"><tspan class="edition__locale-name">Birra Moretti</tspan> • <tspan class="edition__locale-name">Birra Moretti</tspan> • <tspan class="edition__locale-name">Birra Moretti</tspan> •</textPath></text>
+              </svg>
+              <img class="edition__locale-logo" src="assets/beers/birra_morretti_beer.jpg" alt="Birra Moretti" width="112" height="112" loading="lazy" />
+            </li>
+            <li class="edition__beer">
+              <svg class="edition__locale-ring" viewBox="0 0 200 200" aria-hidden="true">
+                <path id="beer-ring-estrella" d="M30,100 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" fill="none" />
+                <text><textPath href="#beer-ring-estrella" textLength="428" lengthAdjust="spacing"><tspan class="edition__locale-name">Estrella</tspan> • <tspan class="edition__locale-name">Estrella</tspan> • <tspan class="edition__locale-name">Estrella</tspan> • <tspan class="edition__locale-name">Estrella</tspan> •</textPath></text>
+              </svg>
+              <img class="edition__locale-logo" src="assets/beers/estrella_beer.jpg" alt="Estrella" width="112" height="112" loading="lazy" />
+            </li>
+            <li class="edition__beer">
+              <svg class="edition__locale-ring" viewBox="0 0 200 200" aria-hidden="true">
+                <path id="beer-ring-mythos" d="M30,100 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" fill="none" />
+                <text><textPath href="#beer-ring-mythos" textLength="428" lengthAdjust="spacing"><tspan class="edition__locale-name">Mythos</tspan> • <tspan class="edition__locale-name">Mythos</tspan> • <tspan class="edition__locale-name">Mythos</tspan> • <tspan class="edition__locale-name">Mythos</tspan> • <tspan class="edition__locale-name">Mythos</tspan> •</textPath></text>
+              </svg>
+              <img class="edition__locale-logo" src="assets/beers/mythos_beer.jpg" alt="Mythos" width="112" height="112" loading="lazy" />
+            </li>
+            <li class="edition__beer">
+              <svg class="edition__locale-ring" viewBox="0 0 200 200" aria-hidden="true">
+                <path id="beer-ring-pivolabs" d="M30,100 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" fill="none" />
+                <text><textPath href="#beer-ring-pivolabs" textLength="428" lengthAdjust="spacing"><tspan class="edition__locale-name">Pivo Labs</tspan> • <tspan class="edition__locale-name">Pivo Labs</tspan> • <tspan class="edition__locale-name">Pivo Labs</tspan> • <tspan class="edition__locale-name">Pivo Labs</tspan> •</textPath></text>
+              </svg>
+              <img class="edition__locale-logo" src="assets/beers/pivolabs_beer.jpg" alt="Pivo Labs" width="112" height="112" loading="lazy" />
+            </li>
+          </ul>
+        </div>
+        <div class="edition__beers-dots" role="group" data-beers-dots>
+          <button type="button" class="edition__beers-dot is-active" data-beers-dot="0" aria-label="Слајд 1" data-i18n-aria="home.beers_slide_1" aria-current="true"></button>
+          <button type="button" class="edition__beers-dot" data-beers-dot="1" aria-label="Слајд 2" data-i18n-aria="home.beers_slide_2"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="edition__marquee" data-marquee aria-label="Октоберфест во Че" data-i18n-aria="home.marquee_label">
+      <div class="edition__marquee-track" data-marquee-track>
+        <div class="edition__marquee-group" data-marquee-group>
+          <span class="edition__marquee-item" data-i18n="home.marquee_arrived">Октоберфест пристигна</span>
+          <span class="edition__marquee-dot" aria-hidden="true"></span>
+          <button type="button" class="edition__marquee-item edition__marquee-link" data-menu-open="oktoberfest" aria-haspopup="dialog" data-i18n="home.marquee_menu">Кликни и види го нашето Октоберфест мени</button>
+          <span class="edition__marquee-dot" aria-hidden="true"></span>
+          <span class="edition__marquee-item" data-i18n="home.marquee_food">Пробај го нашиот Братвурст и Баварски перек</span>
+          <span class="edition__marquee-dot" aria-hidden="true"></span>
+          <span class="edition__marquee-item" data-i18n="home.marquee_beer">Жеден си за Пауланер лагер?</span>
+          <span class="edition__marquee-dot" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="edition__band edition__band--closing">
+      <div class="edition__col edition__col--events">
+        <h2 class="edition__flavour-title">
+          <span data-i18n="home.events_title">Следни настани</span>
+        </h2>
+        <div class="edition__events-carousel" data-events-carousel aria-label="Претстојни настани">
+          <div class="edition__events-track" data-events-track>
+            <div class="edition__events-slide is-active">
+              <img src="assets/event_main_page/9189.jpg" alt="Слушачка забава под мостот на Гоце Делчев" loading="lazy" />
+              <a class="edition__events-learn" href="https://www.instagram.com/kadeeche/" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="home.events_learn_more">Научи повеќе</span>
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="edition__events-slide">
+              <img src="assets/event_main_page/9191.jpg" alt="Архив на траги — изложба на Аммар Качар" loading="lazy" />
+              <a class="edition__events-learn" href="https://www.instagram.com/kadeeche/" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="home.events_learn_more">Научи повеќе</span>
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="events.html" class="btn btn-outline btn-sm edition__events-cta">
+          <i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
+          <span data-i18n="home.events_cta">Погледни минати настани</span>
+        </a>
+      </div>
+
+      <div class="edition__col edition__player-section edition__col--menu">
+        <h2 class="edition__flavour-title">
+          <span data-i18n="home.menu_carousel_title">Погледни го нашето мени</span>
+        </h2>
+        <div class="edition__menu-carousel" data-carousel data-menu-mode="oktoberfest" aria-label="Преглед на менито">
+          <div class="edition__menu-carousel-track" data-carousel-track></div>
+          <div class="edition__menu-mode" role="group" aria-label="Избор на мени" data-i18n-aria="home.menu_mode_group">
+            <button type="button" class="edition__menu-mode-btn edition__menu-mode-btn--oktoberfest is-active" data-menu-mode-btn="oktoberfest" data-i18n="home.menu_mode_oktoberfest" aria-pressed="true">Октоберфест мени</button>
+            <button type="button" class="edition__menu-mode-btn edition__menu-mode-btn--normal" data-menu-mode-btn="normal" data-i18n="home.menu_mode_normal" aria-pressed="false">Нормално мени</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="edition__col edition__player-section edition__col--player">
+        <h2 class="edition__flavour-title">
+          <span data-i18n="home.player_heading">Слушни го нашето плејлистче!</span>
+        </h2>
+        <div class="edition__player">
+          <div class="che-turntable" data-che-player>
+            <div class="che-turntable__embed-clip" aria-hidden="true">
+              <div data-player-embed></div>
+            </div>
+            <div class="che-turntable__plinth">
+              <span class="che-turntable__led" aria-hidden="true"></span>
+              <div class="che-turntable__deck">
+                <div class="che-turntable__record" data-player-record>
+                  <div class="che-turntable__grooves" aria-hidden="true"></div>
+                  <div class="che-turntable__label">
+                    <img class="che-turntable__cover" data-player-cover src="" alt="" width="88" height="88" />
+                  </div>
+                  <div class="che-turntable__spindle" aria-hidden="true"></div>
+                </div>
+                <div class="che-turntable__arm" data-player-arm aria-hidden="true">
+                  <div class="che-turntable__arm-pivot"></div>
+                  <div class="che-turntable__arm-assembly">
+                    <div class="che-turntable__arm-bar"></div>
+                    <div class="che-turntable__arm-head"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="che-turntable__meta">
+                <h3 class="che-turntable__title" data-player-title>—</h3>
+                <p class="che-turntable__artist" data-player-artist>Retro 80s CHE</p>
+              </div>
+              <div class="che-turntable__controls">
+                <button type="button" class="che-turntable__btn" data-player-shuffle aria-pressed="false" aria-label="Shuffle"><i class="fa-solid fa-shuffle"></i></button>
+                <button type="button" class="che-turntable__btn" data-player-prev aria-label="Previous"><i class="fa-solid fa-backward-step"></i></button>
+                <button type="button" class="che-turntable__btn che-turntable__btn--play" data-player-play aria-label="Play"><i class="fa-solid fa-play"></i></button>
+                <button type="button" class="che-turntable__btn" data-player-next aria-label="Next"><i class="fa-solid fa-forward-step"></i></button>
+                <a class="che-turntable__btn" data-player-open href="https://open.spotify.com/playlist/1FwgrxGksSCPBpdul6Po6f" target="_blank" rel="noopener noreferrer" aria-label="Open in Spotify"><i class="fa-brands fa-spotify"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="edition__foot">
+      <div class="edition__col">
+        <h2 class="edition__foot-title" data-i18n="home.connect_title">Да се поврземе!</h2>
+        <a href="mailto:hello@kafebarche.mk" data-i18n="contact.email_value">hello@kafebarche.mk</a>
+        <a href="tel:+38978383893" data-i18n="contact.phone_value">+389 78 383 893</a>
+        <p data-i18n="contact.address_value">Костурски херои 15/2, Скопје (спроти Универзална сала)</p>
+      </div>
+      <div class="edition__col">
+        <h2 class="edition__foot-title" data-i18n="contact.hours_label">Работно време</h2>
+        <p data-i18n="contact.hours_value">Секој ден: 14:00–00:00</p>
+      </div>
+      <div class="edition__col edition__col--locales">
+        <h2 class="edition__foot-title" data-i18n="footer.other_locales">Посетете ги нашите други локали</h2>
+        <div class="edition__locales-row">
+          <a class="edition__locale edition__locale--footer" href="https://www.instagram.com/treska_bar/" target="_blank" rel="noopener noreferrer" aria-label="Треска-бар на Instagram" data-i18n-aria="footer.locale_treska_ig">
+            <svg class="edition__locale-ring" viewBox="40 42 120 127" aria-hidden="true">
+              <path id="locale-arc-treska" d="M 43.2,135.5 A 67,67 0 0 0 156.8,135.5" fill="none" />
+              <text><textPath href="#locale-arc-treska" startOffset="50%" text-anchor="middle">• <tspan class="edition__locale-name" data-i18n="footer.locale_treska">Треска-бар</tspan> •</textPath></text>
+            </svg>
+            <img class="edition__locale-logo" src="assets/locations/treska_bar1.jpg" alt="Треска-бар" width="112" height="112" loading="lazy" />
+          </a>
+          <a class="edition__locale edition__locale--footer" href="https://www.instagram.com/kafanche/" target="_blank" rel="noopener noreferrer" aria-label="Кафанче на Instagram" data-i18n-aria="footer.locale_kafanche_ig">
+            <svg class="edition__locale-ring" viewBox="40 42 120 127" aria-hidden="true">
+              <path id="locale-arc-kafanche" d="M 43.2,135.5 A 67,67 0 0 0 156.8,135.5" fill="none" />
+              <text><textPath href="#locale-arc-kafanche" startOffset="50%" text-anchor="middle">• <tspan class="edition__locale-name" data-i18n="footer.locale_kafanche">Кафанче</tspan> •</textPath></text>
+            </svg>
+            <img class="edition__locale-logo" src="assets/locations/kafanche.jpg" alt="Кафанче" width="112" height="112" loading="lazy" />
+          </a>
+        </div>
+      </div>
+      <div class="edition__foot-bottom">
+        <p class="edition__foot-copy" data-i18n="footer.copy">© 2026 Кафе Бар Че. Сите права задржани.</p>
+        <nav class="edition__foot-legal" aria-label="Правни информации">
+          <a href="privacy.html" data-i18n="footer.privacy">Приватност</a>
+          <button type="button" data-cookie-settings data-i18n="footer.cookies">Колачиња</button>
+        </nav>
+      </div>
+    </footer>
+  </main>
+
+  <div class="story-popup-overlay" data-story-overlay aria-hidden="true">
+    <article class="story-popup" role="dialog" aria-modal="true" aria-labelledby="story-popup-title">
+      <button type="button" class="story-popup__close" data-story-close aria-label="Затвори ја приказната" data-i18n-aria="home.about_story_close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      <header class="story-popup__header">
+        <p class="edition__kicker" data-i18n="home.about_story_kicker">За Нас</p>
+        <h2 id="story-popup-title" class="story-popup__title" data-i18n="home.about_story_title">Нашата приказна</h2>
+      </header>
+      <div class="story-popup__body">
+        <p data-i18n="home.about_story_p1"></p>
+        <p data-i18n="home.about_story_p2"></p>
+        <p data-i18n="home.about_story_p3" data-i18n-html="true"></p>
+      </div>
+    </article>
+  </div>
+
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <button type="button" class="cookie-banner__close" data-cookie-decline aria-label="Затвори"><i class="fa-solid fa-xmark"></i></button>
+    <div class="cookie-banner__icon" aria-hidden="true"><i class="fa-solid fa-cookie-bite"></i></div>
+    <h3 class="cookie-banner__title" data-i18n="cookies.title">Уште едно известување за колачиња!</h3>
+    <p class="cookie-banner__text">
+      <span data-i18n="cookies.message">Ние користиме колачиња за подобро корисничко искуство. Со кликање Прифати се согласувате со нашата</span>
+      <a href="privacy.html" data-i18n="cookies.policy_link"> политика за приватност</a>.
+    </p>
+    <div class="cookie-banner__actions">
+      <button class="cookie-banner__accept" data-cookie-accept data-i18n="cookies.accept">Прифати</button>
+      <button class="cookie-banner__edit" data-cookie-decline data-i18n="cookies.decline">Одбиј</button>
+    </div>
+  </div>
+
+  <script src="js/locales-data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/cookies.js"></script>
+  <script src="js/menu-popup.js"></script>
+  <script src="js/map-popup.js"></script>
+  <script>
+    window.onSpotifyIframeApiReady = function (IFrameAPI) {
+      window.SpotifyIframeApi = IFrameAPI;
+      document.dispatchEvent(new Event('che:spotify-api'));
+    };
+  </script>
+  <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+  <script src="js/spotify-player.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

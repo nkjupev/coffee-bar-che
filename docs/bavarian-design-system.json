@@ -1,0 +1,212 @@
+{
+  "designSystem": {
+    "name": "Bavarian Oktoberfest Style",
+    "version": "1.0",
+    "description": "Traditional Bavarian design system featuring diamond lozenge patterns and festive bunting elements",
+    
+    "colorPalette": {
+      "primary": {
+        "bavarianBlue": {
+          "hex": "#1FA2D8",
+          "rgb": "rgb(31, 162, 216)",
+          "usage": "Primary brand color, patterns, decorative elements"
+        },
+        "white": {
+          "hex": "#FFFFFF",
+          "rgb": "rgb(255, 255, 255)",
+          "usage": "Background, alternating pattern elements, content areas"
+        }
+      },
+      "colorScheme": "Two-color system with high contrast",
+      "colorApplication": "Alternating pattern creates visual rhythm"
+    },
+
+    "layoutStructure": {
+      "template": "tripartite",
+      "sections": [
+        {
+          "name": "header",
+          "position": "top",
+          "heightRatio": "20%",
+          "components": ["decorative-bunting"],
+          "alignment": "top-left-anchored",
+          "purpose": "Decorative header element"
+        },
+        {
+          "name": "content",
+          "position": "middle",
+          "heightRatio": "55%",
+          "components": ["text-area", "information-blocks"],
+          "background": "white",
+          "purpose": "Primary content area - clean and open"
+        },
+        {
+          "name": "footer",
+          "position": "bottom",
+          "heightRatio": "25%",
+          "components": ["diamond-pattern-border"],
+          "purpose": "Decorative footer pattern"
+        }
+      ],
+      "whiteSpace": {
+        "centerArea": "Maximum - creates focus and breathability",
+        "margins": "Minimal - patterns extend to edges"
+      }
+    },
+
+    "geometricPatterns": {
+      "diamondLozenge": {
+        "type": "repeating-geometric",
+        "shape": "diamond/rhombus",
+        "orientation": "45-degree rotation",
+        "pattern": "checkerboard alternating",
+        "colorSequence": ["bavarianBlue", "white"],
+        "dimensions": {
+          "aspectRatio": "1:2 (width:height approximately)",
+          "scalability": "uniform across entire section"
+        },
+        "application": "Bottom border/footer section",
+        "visualEffect": "Creates traditional Bavarian flag motif",
+        "arrangement": "Continuous repeating pattern edge-to-edge"
+      },
+      
+      "checkeredBunting": {
+        "type": "decorative-garland",
+        "baseShape": "triangular pennants",
+        "internalPattern": "diamond checkered",
+        "orientation": "Hung diagonally from top-left",
+        "arrangement": {
+          "style": "strung on continuous line",
+          "spacing": "overlapping with varying depths",
+          "progression": "Descending from top-left to right"
+        },
+        "triangleDetails": {
+          "shape": "Isosceles triangles",
+          "size": "Decreasing as they recede",
+          "pattern": "Same diamond lozenge pattern as footer"
+        },
+        "visualEffect": "Creates festive, celebratory atmosphere"
+      }
+    },
+
+    "visualHierarchy": {
+      "focalPoint": "Center content area",
+      "visualFlow": [
+        "Decorative bunting draws eye from top-left",
+        "Empty white space creates focus on content",
+        "Diamond pattern grounds the design at bottom"
+      ],
+      "balance": "Asymmetric decorative elements balanced by large central whitespace"
+    },
+
+    "designPrinciples": {
+      "aesthetic": "Traditional Bavarian folk design",
+      "mood": "Festive, celebratory, cultural",
+      "simplicity": "Two-color restriction creates strong visual impact",
+      "functionality": "Decorative borders frame large content area",
+      "culturalReference": "Bavarian flag and Oktoberfest aesthetic"
+    },
+
+    "componentLibrary": {
+      "buntingGarland": {
+        "element": "Decorative pennant string",
+        "placement": "Top section, anchored top-left",
+        "characteristics": [
+          "String line visible connecting pennants",
+          "Varying triangle sizes (perspective effect)",
+          "Each triangle contains diamond pattern",
+          "Overlapping arrangement"
+        ],
+        "implementationNotes": "Create depth through size variation and spacing"
+      },
+      
+      "diamondBorder": {
+        "element": "Repeating geometric border",
+        "placement": "Bottom section, full width",
+        "characteristics": [
+          "Perfect geometric repetition",
+          "Edge-to-edge coverage",
+          "Alternating color diamonds",
+          "45-degree diamond orientation"
+        ],
+        "implementationNotes": "Pattern should be mathematically precise and seamless"
+      }
+    },
+
+    "typographyGuidelines": {
+      "contentArea": {
+        "placement": "Central white section",
+        "alignment": "Typically centered",
+        "hierarchy": "Clear distinction between headline and body",
+        "colorRecommendation": "Dark text on white background for readability"
+      }
+    },
+
+    "spacingSystem": {
+      "contentPadding": "Generous - maintain clean white space",
+      "patternSpacing": "None - patterns fill their sections completely",
+      "verticalRhythm": "Divided into distinct horizontal zones"
+    },
+
+    "scalingRules": {
+      "patterns": {
+        "diamondSize": "Scale proportionally with canvas size",
+        "buntingSize": "Maintain aspect ratio, adjust quantity based on width"
+      },
+      "layout": {
+        "proportions": "Maintain 20-55-25 ratio across sections",
+        "contentArea": "Always preserve generous whitespace"
+      }
+    },
+
+    "usageContext": {
+      "appropriateFor": [
+        "Event flyers",
+        "Festival announcements",
+        "Cultural celebration materials",
+        "Restaurant/bar promotions",
+        "Traditional themed designs"
+      ],
+      "notAppropriateFor": [
+        "Corporate/formal communications",
+        "Minimalist modern brands",
+        "Non-cultural contexts"
+      ]
+    },
+
+    "implementationInstructions": {
+      "svg": {
+        "diamondPattern": "Use SVG patterns with precise 45-degree rotated squares, alternating fill colors",
+        "bunting": "Layer multiple triangular paths with clipping masks for internal patterns"
+      },
+      "css": {
+        "diamondPattern": "Use linear-gradient or conic-gradient with background-size for tiling, or CSS clip-path for individual diamonds",
+        "positioning": "Absolute positioning for bunting, fixed height sections"
+      },
+      "canvas": {
+        "approach": "Mathematical generation of diamond coordinates, rotation transforms for triangular pennants"
+      }
+    },
+
+    "aiReplicationPrompt": {
+      "essentialElements": [
+        "Two-color scheme: Bavarian blue (#1FA2D8) and white",
+        "Bottom 25%: Edge-to-edge diamond checkerboard pattern (45-degree rotated squares)",
+        "Top section: Diagonal bunting string with triangular pennants containing same diamond pattern",
+        "Center 55%: Clean white content area with generous padding",
+        "Bunting arranged from top-left descending right with size variation",
+        "Geometric precision in pattern repetition"
+      ],
+      "styleKeywords": [
+        "Bavarian",
+        "Oktoberfest",
+        "Traditional",
+        "Geometric",
+        "Festive",
+        "Diamond lozenge pattern",
+        "Checkered",
+        "Folk design"
+      ]
+    }
+  }
+}

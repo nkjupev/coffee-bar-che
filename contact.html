@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Контактирајте нè — Кафе Бар Че, Костурски херои 15/2, Скопје." />
+  <title data-i18n="meta.contact_title">Контакт | Кафе Бар Че</title>
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,600;1,700&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body class="edition-page page-contact">
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Оди на содржина</a>
+  <header class="navbar" role="banner">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo"><img src="assets/logo.png" alt="Лого" /><div class="navbar__logo-text">Кафе Бар Че<span>Скопје</span></div></a>
+      <nav class="navbar__nav">
+        <a href="index.html" class="navbar__link" data-i18n="nav.home">Дома</a>
+        <a href="about.html" class="navbar__link" data-i18n="nav.about">За Нас</a>
+        <a href="events.html" class="navbar__link" data-i18n="nav.events">Настани</a>
+        <a href="team.html" class="navbar__link" data-i18n="nav.team">Тим</a>
+        <a href="contact.html" class="navbar__link active" data-i18n="nav.contact">Контакт</a>
+      </nav>
+      <div class="navbar__actions">
+        <div class="lang-toggle" role="group"><button class="lang-btn active" data-lang="mk">MK</button><button class="lang-btn" data-lang="en">EN</button></div>
+        <button class="navbar__hamburger" aria-label="Отвори мени" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="navbar__mobile">
+      <a href="index.html" class="navbar__link" data-i18n="nav.home">Дома</a>
+      <a href="events.html" class="navbar__link" data-i18n="nav.events">Настани</a>
+      <a href="team.html" class="navbar__link" data-i18n="nav.team">Тим</a>
+      <a href="contact.html" class="navbar__link active" data-i18n="nav.contact">Контакт</a>
+    </nav>
+  </header>
+
+  <aside class="edition-rail" aria-label="Социјални мрежи">
+    <img class="edition-rail__mark" src="assets/logo.png" alt="" width="28" height="28" />
+    <p class="edition-rail__brand">Кафе Бар Че</p>
+    <div class="edition-rail__social">
+      <a href="https://www.instagram.com/kadeeche/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/CafeBarChe/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://open.spotify.com/playlist/1FwgrxGksSCPBpdul6Po6f" target="_blank" rel="noopener noreferrer" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+    </div>
+  </aside>
+
+  <main id="main" class="edition">
+    <nav class="edition__nav" aria-label="Главна навигација">
+      <a class="edition__nav-item" href="index.html" data-i18n="nav.home">Дома</a>
+      <a class="edition__nav-item" href="events.html" data-i18n="nav.events">Настани</a>
+      <a class="edition__nav-item" href="team.html" data-i18n="nav.team">Тим</a>
+      <a class="edition__nav-item" href="contact.html" data-i18n="nav.contact">Контакт</a>
+      <div class="edition__nav-item edition__nav-item--lang">
+        <div class="lang-toggle" role="group" aria-label="Избор на јазик">
+          <button class="lang-btn active" data-lang="mk" aria-pressed="true">MK</button>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="edition__hero">
+      <div class="edition__hero-copy">
+        <p class="edition__kicker" data-i18n="contact.overline">Контакт</p>
+        <h1 class="che-contact-card__title" id="contact-dynamic-title" data-i18n="contact.title_job" style="font-size:clamp(1.9rem,3.4vw,2.6rem);">Форма за аплицикација за работа</h1>
+        <p class="edition__lede" id="contact-dynamic-subtitle" data-i18n="contact.subtitle_job"></p>
+
+        <div class="che-type-select" data-type-select>
+          <button type="button" class="che-type-select__trigger" aria-haspopup="listbox" aria-expanded="false" id="contact-type-trigger">
+            <span class="che-type-select__icon" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+            <span class="che-type-select__label" data-i18n="contact.type_job">Работа</span>
+            <i class="fa-solid fa-chevron-down che-type-select__chevron" aria-hidden="true"></i>
+          </button>
+          <ul class="che-type-select__list" role="listbox" id="contact-type-list" hidden>
+            <li class="che-type-select__option is-active" role="option" data-type="job" aria-selected="true">
+              <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+              <span data-i18n="contact.type_job">Работа</span>
+            </li>
+            <li class="che-type-select__option" role="option" data-type="music" aria-selected="false">
+              <i class="fa-solid fa-music" aria-hidden="true"></i>
+              <span data-i18n="contact.type_music">Музика</span>
+            </li>
+            <li class="che-type-select__option" role="option" data-type="space" aria-selected="false">
+              <i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i>
+              <span data-i18n="contact.type_space">Простор</span>
+            </li>
+          </ul>
+          <input type="hidden" name="inquiry_type" id="contact-inquiry-type" value="job" form="contact-form" />
+        </div>
+
+        <div class="edition__hero-map">
+          <iframe title="Локација на Кафе Бар Че" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Kosturski+Heroi+15+Skopje&amp;hl=mk&amp;z=15&amp;output=embed"></iframe>
+        </div>
+
+        <div class="edition__contact-mini">
+          <a href="mailto:hello@kafebarche.mk"><i class="fa-regular fa-envelope"></i><span data-i18n="contact.email_value">hello@kafebarche.mk</span></a>
+          <a href="tel:+38978383893"><i class="fa-solid fa-phone"></i><span data-i18n="contact.phone_value">+389 78 383 893</span></a>
+          <p><i class="fa-solid fa-location-dot"></i><span data-i18n="contact.address_value"></span></p>
+        </div>
+      </div>
+
+      <div class="edition__hero-photo edition__hero-photo--form">
+        <div class="che-contact-form-shell">
+          <form id="contact-form" class="che-contact-form" data-form="contact" data-success-key="contact.success_msg" novalidate>
+            <!-- Job -->
+            <div class="che-contact-form__panel" data-form-panel="job">
+              <section class="che-form-section">
+                <div class="che-form-section__head">
+                  <span class="che-form-section__icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
+                  <h2 class="che-form-section__title" data-i18n="contact.section_personal">Лични информации</h2>
+                </div>
+                <div class="che-contact-form__row">
+                  <div class="che-contact-form__group">
+                    <label class="che-contact-form__label" for="job-name"><span data-i18n="contact.field_name">Вашето име</span><span class="che-contact-form__req">*</span></label>
+                    <div class="che-field-wrap">
+                      <i class="fa-regular fa-user che-field-wrap__icon" aria-hidden="true"></i>
+                      <input class="form-input che-contact-form__input" type="text" id="job-name" name="name" required minlength="2" autocomplete="name" data-i18n="contact.field_name_ph" />
+                    </div>
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                  <div class="che-contact-form__group">
+                    <label class="che-contact-form__label" for="job-phone"><span data-i18n="contact.field_phone">Телефон</span><span class="che-contact-form__req">*</span></label>
+                    <div class="che-field-wrap">
+                      <i class="fa-solid fa-phone che-field-wrap__icon" aria-hidden="true"></i>
+                      <input class="form-input che-contact-form__input" type="tel" id="job-phone" name="phone" required autocomplete="tel" data-i18n="contact.field_phone_ph" />
+                    </div>
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                </div>
+                <div class="che-contact-form__group">
+                  <label class="che-contact-form__label" for="job-email"><span data-i18n="contact.field_email">Е-пошта</span><span class="che-contact-form__req">*</span></label>
+                  <div class="che-field-wrap">
+                    <i class="fa-regular fa-envelope che-field-wrap__icon" aria-hidden="true"></i>
+                    <input class="form-input che-contact-form__input" type="email" id="job-email" name="email" required autocomplete="email" data-i18n="contact.field_email_ph" />
+                  </div>
+                  <span class="form-error" role="alert"></span>
+                </div>
+              </section>
+
+              <section class="che-form-section">
+                <div class="che-form-section__head">
+                  <span class="che-form-section__icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span>
+                  <h2 class="che-form-section__title" data-i18n="contact.section_job">Апликација</h2>
+                </div>
+                <div class="che-contact-form__group">
+                  <label class="che-contact-form__label" for="job-position"><span data-i18n="contact.field_position">Позиција</span><span class="che-contact-form__req">*</span></label>
+                  <div class="che-field-wrap che-field-wrap--select">
+                    <i class="fa-solid fa-list che-field-wrap__icon" aria-hidden="true"></i>
+                    <select class="form-select che-contact-form__input" id="job-position" name="position" required>
+                      <option value="" disabled hidden selected data-i18n="contact.field_position_ph">Изберете позиција</option>
+                      <option value="bartender" data-i18n="contact.position_bartender">Шанкер</option>
+                      <option value="waiter" data-i18n="contact.position_waiter">Келнер</option>
+                    </select>
+                  </div>
+                  <span class="form-error" role="alert"></span>
+                </div>
+                <div class="che-contact-form__group">
+                  <label class="che-contact-form__label" for="job-experience"><span data-i18n="contact.field_experience">Искуство</span></label>
+                  <textarea class="form-textarea che-contact-form__input che-contact-form__textarea" id="job-experience" name="experience" data-i18n="contact.field_experience_ph"></textarea>
+                  <span class="form-error" role="alert"></span>
+                </div>
+                <div class="che-contact-form__group">
+                  <label class="che-contact-form__label" for="job-message"><span data-i18n="contact.field_message">Порака</span><span class="che-contact-form__req">*</span></label>
+                  <textarea class="form-textarea che-contact-form__input che-contact-form__textarea" id="job-message" name="message" required minlength="10" data-i18n="contact.field_message_job_ph"></textarea>
+                  <span class="form-error" role="alert"></span>
+                </div>
+              </section>
+            </div>
+
+            <!-- Music -->
+            <div class="che-contact-form__panel" data-form-panel="music" hidden>
+              <section class="che-form-section">
+                <div class="che-form-section__head">
+                  <span class="che-form-section__icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
+                  <h2 class="che-form-section__title" data-i18n="contact.section_personal">Лични информации</h2>
+                </div>
+                <div class="che-contact-form__row">
+                  <div class="che-contact-form__group">
+                    <label class="che-contact-form__label" for="music-name"><span data-i18n="contact.field_name">Вашето име</span><span class="che-contact-form__req">*</span></label>
+                    <div class="che-field-wrap">
+                      <i class="fa-regular fa-user che-field-wrap__icon" aria-hidden="true"></i>
+                      <input class="form-input che-contact-form__input" type="text" id="music-name" name="name" minlength="2" autocomplete="name" data-required="true" data-i18n="contact.field_name_ph" />
+                    </div>
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                  <div class="che-contact-form__group">
+                    <label class="che-contact-form__label" for="music-phone"><span data-i18n="contact.field_phone">Телефон</span><span class="che-contact-form__req">*</span></label>
+                    <div class="che-field-wrap">
+                      <i class="fa-solid fa-phone che-field-wrap__icon" aria-hidden="true"></i>
+                      <input class="form-input che-contact-form__input" type="tel" id="music-phone" name="phone" data-required="true" autocomplete="tel" data-i18n="contact.field_phone_ph" />
+                    </div>
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                </div>
+                <div class="che-contact-form__group">
+                  <label class="che-contact-form__label" for="music-email"><span data-i18n="contact.field_email">Е-пошта</span><span class="che-contact-form__req">*</span></label>
+                  <div class="che-field-wrap">
+                    <i class="fa-regular fa-envelope che-field-wrap__icon" aria-hidden="true"></i>
+                    <input class="form-input che-contact-form__input" type="email" id="music-email" name="email" data-required="true" autocomplete="email" data-i18n="contact.field_email_ph" />
+                  </div>
+                  <span class="form-error" role="alert"></span>
+                </div>
+              </section>
+
+              <section class="che-form-section">
+                <div class="che-form-section__head">
+                  <span class="che-form-section__icon"><i class="fa-solid fa-music" aria-hidden="true"></i></span>
+                  <h2 class="che-form-section__title" data-i18n="contact.section_music">Музички профил</h2>
+                </div>
+                <div class="che-contact-form__row">
+                  <div class="che-contact-form__group">
+                    <label class="che-contact-form__label" for="music-artist"><span data-i18n="contact.field_artist">Име / псевдоним</span><span class="che-contact-form__req">*</span></label>
+                    <div class="che-field-wrap">
+                      <i class="fa-solid fa-headphones che-field-wrap__icon" aria-hidden="true"></i>
+                      <input class="form-input che-contact-form__input" type="text" id="music-artist" name="artist_name" data-required="true" data-i18n="contact.field_artist_ph" />
+                    </div>
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                  <div class="che-contact-form__group">
+                    <label class="che-contact-form__label" for="music-genre"><span data-i18n="contact.field_genre">Жанр</span><span class="che-contact-form__req">*</span></label>
+                    <div class="che-field-wrap">
+                      <i class="fa-solid fa-compact-disc che-field-wrap__icon" aria-hidden="true"></i>
+                      <input class="form-input che-contact-form__input" type="text" id="music-genre" name="genre" data-required="true" data-i18n="contact.field_genre_ph" />
+                    </div>
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                </div>
+                <div class="che-contact-form__group">
+                  <label class="che-contact-form__label" for="music-link"><span data-i18n="contact.field_mix_link">Линк до микс / музика</span></label>
+                  <div class="che-field-wrap">
+                    <i class="fa-solid fa-link che-field-wrap__icon" aria-hidden="true"></i>
+                    <input class="form-input che-contact-form__input" type="url" id="music-link" name="mix_link" data-i18n="contact.field_mix_link_ph" />
+                  </div>
+                  <span class="form-error" role="alert"></span>
+                </div>
+                <div class="che-contact-form__group">
+                  <label class="che-contact-form__label" for="music-message"><span data-i18n="contact.field_message">Порака</span><span class="che-contact-form__req">*</span></label>
+                  <textarea class="form-textarea che-contact-form__input che-contact-form__textarea" id="music-message" name="message" minlength="10" data-required="true" data-i18n="contact.field_message_music_ph"></textarea>
+                  <span class="form-error" role="alert"></span>
+                </div>
+              </section>
+            </div>
+
+            <!-- Space -->
+            <div class="che-contact-form__panel" data-form-panel="space" hidden>
+              <section class="che-form-section">
+                <div class="che-form-section__head">
+                  <span class="che-form-section__icon"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
+                  <h2 class="che-form-section__title" data-i18n="contact.section_personal">Лични информации</h2>
+                </div>
+                <div class="che-contact-form__row">
+                  <div class="che-contact-form__group">
+                    <label class="che-contact-form__label" for="space-name"><span data-i18n="contact.field_name">Вашето име</span><span class="che-contact-form__req">*</span></label>
+                    <div class="che-field-wrap">
+                      <i class="fa-regular fa-user che-field-wrap__icon" aria-hidden="true"></i>
+                      <input class="form-input che-contact-form__input" type="text" id="space-name" name="name" minlength="2" autocomplete="name" data-required="true" data-i18n="contact.field_name_ph" />
+                    </div>
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                  <div class="che-contact-form__group">
+                    <label class="che-contact-form__label" for="space-phone"><span data-i18n="contact.field_phone">Телефон</span><span class="che-contact-form__req">*</span></label>
+                    <div class="che-field-wrap">
+                      <i class="fa-solid fa-phone che-field-wrap__icon" aria-hidden="true"></i>
+                      <input class="form-input che-contact-form__input" type="tel" id="space-phone" name="phone" data-required="true" autocomplete="tel" data-i18n="contact.field_phone_ph" />
+                    </div>
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                </div>
+                <div class="che-contact-form__group">
+                  <label class="che-contact-form__label" for="space-email"><span data-i18n="contact.field_email">Е-пошта</span><span class="che-contact-form__req">*</span></label>
+                  <div class="che-field-wrap">
+                    <i class="fa-regular fa-envelope che-field-wrap__icon" aria-hidden="true"></i>
+                    <input class="form-input che-contact-form__input" type="email" id="space-email" name="email" data-required="true" autocomplete="email" data-i18n="contact.field_email_ph" />
+                  </div>
+                  <span class="form-error" role="alert"></span>
+                </div>
+              </section>
+
+              <section class="che-form-section">
+                <div class="che-form-section__head">
+                  <span class="che-form-section__icon"><i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i></span>
+                  <h2 class="che-form-section__title" data-i18n="contact.section_space">Детали за настанот</h2>
+                </div>
+                <div class="che-contact-form__row">
+                  <div class="che-contact-form__group">
+                    <label class="che-contact-form__label" for="space-event-type"><span data-i18n="contact.field_event_type">Тип на настан</span><span class="che-contact-form__req">*</span></label>
+                    <div class="che-field-wrap che-field-wrap--select">
+                      <i class="fa-solid fa-calendar-days che-field-wrap__icon" aria-hidden="true"></i>
+                      <select class="form-select che-contact-form__input" id="space-event-type" name="event_type" data-required="true">
+                        <option value="" data-i18n="contact.field_event_type_ph">Изберете тип</option>
+                        <option value="birthday" data-i18n="contact.event_birthday">Роденден</option>
+                        <option value="corporate" data-i18n="contact.event_corporate">Корпоративен</option>
+                        <option value="private" data-i18n="contact.event_private">Приватна забава</option>
+                        <option value="other" data-i18n="contact.event_other">Друго</option>
+                      </select>
+                    </div>
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                  <div class="che-contact-form__group">
+                    <label class="che-contact-form__label" for="space-date"><span data-i18n="contact.field_date">Претпочитан датум</span><span class="che-contact-form__req">*</span></label>
+                    <div class="che-field-wrap">
+                      <i class="fa-regular fa-calendar che-field-wrap__icon" aria-hidden="true"></i>
+                      <input class="form-input che-contact-form__input" type="date" id="space-date" name="event_date" data-required="true" />
+                    </div>
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                </div>
+                <div class="che-contact-form__group">
+                  <label class="che-contact-form__label" for="space-guests"><span data-i18n="contact.field_guests">Број на гости</span><span class="che-contact-form__req">*</span></label>
+                  <div class="che-field-wrap">
+                    <i class="fa-solid fa-users che-field-wrap__icon" aria-hidden="true"></i>
+                    <input class="form-input che-contact-form__input" type="number" id="space-guests" name="guests" min="1" max="500" data-required="true" data-i18n="contact.field_guests_ph" />
+                  </div>
+                  <span class="form-error" role="alert"></span>
+                </div>
+                <div class="che-contact-form__group">
+                  <label class="che-contact-form__label" for="space-message"><span data-i18n="contact.field_message">Порака</span><span class="che-contact-form__req">*</span></label>
+                  <textarea class="form-textarea che-contact-form__input che-contact-form__textarea" id="space-message" name="message" minlength="10" data-required="true" data-i18n="contact.field_message_space_ph"></textarea>
+                  <span class="form-error" role="alert"></span>
+                </div>
+              </section>
+            </div>
+
+            <div class="che-contact-form__actions">
+              <button type="submit" class="che-contact-form__submit">
+                <span data-i18n="contact.btn_send">Испрати порака</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </form>
+          <div id="form-success" class="form-success che-contact-form__success" role="status" data-i18n="contact.success_msg"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="edition__foot">
+      <div class="edition__col">
+        <h2 class="edition__foot-title" data-i18n="home.connect_title">Да се поврземе!</h2>
+        <a href="mailto:hello@kafebarche.mk" data-i18n="contact.email_value">hello@kafebarche.mk</a>
+        <a href="tel:+38978383893" data-i18n="contact.phone_value">+389 78 383 893</a>
+        <p data-i18n="contact.address_value">Костурски херои 15/2, Скопје (спроти Универзална сала)</p>
+      </div>
+      <div class="edition__col">
+        <h2 class="edition__foot-title" data-i18n="contact.hours_label">Работно време</h2>
+        <p data-i18n="contact.hours_value">Секој ден: 14:00–00:00</p>
+      </div>
+      <div class="edition__col edition__col--locales">
+        <h2 class="edition__foot-title" data-i18n="footer.other_locales">Посетете ги нашите други локали</h2>
+        <div class="edition__locales-row">
+          <a class="edition__locale edition__locale--footer" href="https://www.instagram.com/treska_bar/" target="_blank" rel="noopener noreferrer" aria-label="Треска-бар на Instagram" data-i18n-aria="footer.locale_treska_ig">
+            <svg class="edition__locale-ring" viewBox="40 42 120 127" aria-hidden="true">
+              <path id="locale-arc-treska" d="M 43.2,135.5 A 67,67 0 0 0 156.8,135.5" fill="none" />
+              <text><textPath href="#locale-arc-treska" startOffset="50%" text-anchor="middle">• <tspan class="edition__locale-name" data-i18n="footer.locale_treska">Треска-бар</tspan> •</textPath></text>
+            </svg>
+            <img class="edition__locale-logo" src="assets/locations/treska_bar1.jpg" alt="Треска-бар" width="112" height="112" loading="lazy" />
+          </a>
+          <a class="edition__locale edition__locale--footer" href="https://www.instagram.com/kafanche/" target="_blank" rel="noopener noreferrer" aria-label="Кафанче на Instagram" data-i18n-aria="footer.locale_kafanche_ig">
+            <svg class="edition__locale-ring" viewBox="40 42 120 127" aria-hidden="true">
+              <path id="locale-arc-kafanche" d="M 43.2,135.5 A 67,67 0 0 0 156.8,135.5" fill="none" />
+              <text><textPath href="#locale-arc-kafanche" startOffset="50%" text-anchor="middle">• <tspan class="edition__locale-name" data-i18n="footer.locale_kafanche">Кафанче</tspan> •</textPath></text>
+            </svg>
+            <img class="edition__locale-logo" src="assets/locations/kafanche.jpg" alt="Кафанче" width="112" height="112" loading="lazy" />
+          </a>
+        </div>
+      </div>
+      <div class="edition__foot-bottom">
+        <p class="edition__foot-copy" data-i18n="footer.copy">© 2026 Кафе Бар Че. Сите права задржани.</p>
+        <nav class="edition__foot-legal" aria-label="Правни информации">
+          <a href="privacy.html" data-i18n="footer.privacy">Приватност</a>
+          <button type="button" data-cookie-settings data-i18n="footer.cookies">Колачиња</button>
+        </nav>
+      </div>
+    </footer>
+  </main>
+
+  <div class="cookie-banner" role="dialog" aria-label="Cookie consent"><button type="button" class="cookie-banner__close" data-cookie-decline aria-label="Затвори"><i class="fa-solid fa-xmark"></i></button><div class="cookie-banner__icon" aria-hidden="true"><i class="fa-solid fa-cookie-bite"></i></div><h3 class="cookie-banner__title" data-i18n="cookies.title">Уште едно известување за колачиња!</h3><p class="cookie-banner__text"><span data-i18n="cookies.message"></span> <a href="privacy.html" data-i18n="cookies.policy_link"></a>.</p><div class="cookie-banner__actions"><button class="cookie-banner__accept" data-cookie-accept data-i18n="cookies.accept">Прифати</button><button class="cookie-banner__edit" data-cookie-decline data-i18n="cookies.decline">Одбиј</button></div></div>
+  <script src="js/locales-data.js"></script><script src="js/i18n.js"></script><script src="js/cookies.js"></script><script src="js/menu-popup.js"></script><script src="js/map-popup.js"></script><script src="js/main.js"></script><script src="js/contact.js"></script>
+</body>
+</html>
